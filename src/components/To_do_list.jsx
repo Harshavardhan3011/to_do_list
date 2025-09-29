@@ -3,9 +3,9 @@ import React, { useState } from 'react';
 
 export default function To_do_list() {
   const [todoList, setTodoList] = useState([
-    { text: "Learn HTML", uniqueNo: 1, isChecked: false },
-    { text: "Learn CSS", uniqueNo: 2, isChecked: false },
-    { text: "Learn JavaScript", uniqueNo: 3, isChecked: false },
+    { text: "you can add", uniqueNo: 1, isChecked: false },
+    { text: "delete or else", uniqueNo: 2, isChecked: false },
+    { text: "you can delete", uniqueNo: 3, isChecked: false },
   ]);
   const [userInput, setUserInput] = useState("");
   const [todosCount, setTodosCount] = useState(todoList.length);
