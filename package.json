@@ -5,8 +5,12 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "npx vite build",
+    "postinstall": "chmod +x ./node_modules/.bin/vite",
+    "build": "node --no-warnings ./node_modules/vite/bin/vite.js build",
     "preview": "vite preview"
+  },
+  "engines": {
+    "node": "18.x"
   },
   "dependencies": {
     "framer-motion": "^10.16.4",
